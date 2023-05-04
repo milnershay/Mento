@@ -11,7 +11,7 @@ export default function App() {
   return (
     <NativeBaseProvider>
       <StatusBar bg="#3700B3" barStyle="light-content" />
-      <Box safeAreaTop bg="gray.800">
+      <Box safeAreaTop bg="pink.500">
         <HStack  space="3" alignItems="center"  px="1" py="3"
        justifyContent={"space-between"} w="100%">
         <HStack>
