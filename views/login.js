@@ -1,7 +1,9 @@
 import React from 'react';
 import {FormControl,VStack,Input,Link, Image, extendTheme, Factory, IconButton, Icon, HStack, StatusBar, View, Center, Card, Popover,Button,  NativeBaseProvider, Text, Box, Heading, Slider, Container, CheckIcon } from "native-base";
 
-export function Login() {
+
+export function Login(props) {
+  const {navigation} = props
     return <Center w="100%">
         <Box safeArea p="2" py="8" w="90%" maxW="290">
           <Heading size="lg" fontWeight="600" color="coolGray.800" _dark={{
@@ -44,7 +46,7 @@ export function Login() {
               color: "indigo.500",
               fontWeight: "medium",
               fontSize: "sm"
-            }} href="#">
+            }} onPress={() => navigation.navigate('Signup')}>
                 Sign Up
               </Link>
             </HStack>
