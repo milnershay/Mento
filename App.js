@@ -29,7 +29,7 @@ function MyStack(){
     initialRouteName='Login'
     screenOptions={{
       headerTintColor: 'dea',
-      
+      headerBackVisible: false,
     }}
     >
       <Stack.Screen

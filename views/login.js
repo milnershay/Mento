@@ -36,20 +36,17 @@ export function Login(props) {
             <Button mt="2" colorScheme="indigo">
               Sign in
             </Button>
-            <HStack mt="6" justifyContent="center">
-              <Text fontSize="sm" color="coolGray.600" _dark={{
-              color: "warmGray.200"
-            }}>
-                I'm a new user.{" "}
-              </Text>
-              <Link _text={{
-              color: "indigo.500",
-              fontWeight: "medium",
-              fontSize: "sm"
-            }} onPress={() => navigation.navigate('Signup')}>
-                Sign Up
-              </Link>
-            </HStack>
+
+            <Button
+              colorScheme="indigo"
+              onPress={()=>{
+                navigation.navigate('Signup')
+              }}
+            
+            >
+              Sign Up
+            </Button>
+            
           </VStack>
         </Box>
       </Center>;
