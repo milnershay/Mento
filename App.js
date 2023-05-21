@@ -1,3 +1,4 @@
+
 import { StyleSheet} from 'react-native';
 import React from "react";
 import {Image, extendTheme, Factory, IconButton, Icon,AntDesign, HStack, StatusBar, Header, View, Center, Card, Popover,Button,  NativeBaseProvider, Text, Box, Heading, Slider, Container, CheckIcon } from "native-base";
@@ -9,10 +10,9 @@ import { NavigationContainer } from "@react-navigation/native";
 export default function App() {
   return (
     <NativeBaseProvider>
-        <Login/>
+      <ThemeProvider>
+        <RootNavigation />
+      </ThemeProvider>
     </NativeBaseProvider>
-  ); 
-
+  );
 }
-
-
