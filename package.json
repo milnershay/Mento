@@ -35,6 +35,7 @@
     "react-native-web": "~0.18.10",
     "react-navigation-stack": "^2.10.4",
     "typescript": "^4.9.4"
+
   },
   "resolutions": {
     "expo-modules-autolinking": "~0.8.1"
