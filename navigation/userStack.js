@@ -11,13 +11,11 @@ export default function UserStack() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        screenOptions={{
-          headerShown: false
-        }}
+
       >
-        <Stack.Screen name="Map" component={Map} />
-        <Stack.Screen name="Chat" component={Chat} />
-        <Stack.Screen name="Swipe" component={Swipe} />
+        <Stack.Screen  name="Map" component={Map} options={{headerShown: false}}  />
+        <Stack.Screen name="Chat" component={Chat} options={{headerShown: true}}/>
+        <Stack.Screen name="Swipe" component={Swipe} options={{headerShown: false}}/>
       </Stack.Navigator> 
     </NavigationContainer>
   );
